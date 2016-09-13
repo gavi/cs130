@@ -18,6 +18,10 @@ void Point::print(){
 }
 
 int main(){
+	Point p;
+	p.set_values(10,10);
+	p.print();
+
 	Point *a=new Point;
 	a->set_values(10,20);
 	a->print();

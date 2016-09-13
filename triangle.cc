@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cmath>
+#include<unistd.h>
 using namespace std;
 
 class Point{
@@ -42,10 +43,19 @@ class Triangle{
 
 
 int main(){
-	Point *a=new Point(10,10);
-	Point *b=new Point(20,30);
-	Point *c= new Point(40,10);
-	Triangle *t= new Triangle(a,b,c);
-	t->print();
-	delete t;
+	while(true){
+		Point *a=new Point(10,10);
+		Point *b=new Point(20,30);
+		Point *c= new Point(40,10);
+		delete a;
+		delete b;
+		delete c;
+		//usleep(50 * 1000);
+	}
 }
+
+
+
+
+
+

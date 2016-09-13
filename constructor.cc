@@ -18,7 +18,13 @@ void Point::print(){
 }
 
 int main(){
-	Point *a=new Point(20,30);
-	a->print();
-	delete a;
+	Point a(10,10);
+	Point b(20,30);
+	Point c(1,1);
+
+	a.print();
+	b.print();
+	c.print();
+
+
 }
